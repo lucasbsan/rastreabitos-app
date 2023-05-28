@@ -10,7 +10,7 @@ O frontend da aplicação foi desenvolvido com Angular e o backend foi simulado 
 
 ## Protótipo
 
-*Em breve*
+https://www.figma.com/file/HbBDBmzaGuiEEwykt6Ix4V/rastreabitos-app?type=design&node-id=1-2
 
 ## Checklist
 
@@ -32,3 +32,13 @@ O frontend da aplicação foi desenvolvido com Angular e o backend foi simulado 
 - [ ] Usar a diretiva ngIf
 - [ ] Formatar a apresentação de dados com Pipes.
 - [ ] Build e deploy da aplicação.
+
+## Manual de execução
+- Clonar o repositório com `git clone`
+- Fazer checkout no branch `develop` que contém as modificações mais recentes
+- Abrir o projeto no editor Visual Studio Code (VS Code)
+- Abrir um terminal pelo VSCode e executar a API Fake (JSON Server) via o seguinte comando: 
+  - Comando: `npm run json-server --watch db.json --routes routes.json`
+  - O comando deve ser aplicado no diretório raiz do projeto, ou seja, que contém o arquivo `db.json` e `routes.json`.
+- Abrir um novo terminal pelo VSCode e então executar o projeto Angular
+  - Comando: `ng s`
