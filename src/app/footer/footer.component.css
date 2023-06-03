@@ -1,18 +1,1 @@
-.footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: #D7ECD9;
-  text-align: center;
-}
 
-.footer p {
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 1rem;
-  line-height: 1.5rem;
-  color: #869D98;
-  margin: 0.5rem;
-}

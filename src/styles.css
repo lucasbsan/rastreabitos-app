@@ -1,4 +1,41 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~materialize-css/dist/css/materialize.css";
+@import "~material-icons/iconfont/material-icons.css";
+
+:root {
+  --primaryColor: #D7ECD9;
+}
+
 body {
   margin : 0;
+  background-color: #F7FBFA;
+}
+
+.my-bg-color {
+  background-color: #D7ECD9;
+}
+
+.brand-logo {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  color: #869D98 !important;
+}
+
+.footer-text {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: #869D98;
+  background-color: #e5f3e6;
+}
+
+li > a {
+  color: #869D98 !important;
+}
+
+a {
+  color: #869D98 !important;
 }

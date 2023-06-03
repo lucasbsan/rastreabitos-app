@@ -1,5 +1,11 @@
-<app-header></app-header>
-<div style="text-align: center; padding: 2rem;">
-  Sem atividades para mostrar
-</div>
+<header>
+  <app-menu></app-menu>
+</header>
+
+<main>
+  <div style="text-align: center; padding: 2rem;" [hidden]="!this.isListEmpty">
+    Sem atividades para mostrar
+  </div>
+</main>
+
 <app-footer></app-footer>
