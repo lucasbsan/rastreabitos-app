@@ -5,12 +5,22 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FooterComponent } from './footer/footer.component';
 import { MenuComponent } from './menu/menu.component';
+import { LandPageComponent } from './land-page/land-page.component';
+import { AboutComponent } from './about/about.component';
+import { ListHabitsComponent } from './list-habits/list-habits.component';
+import { HabitComponent } from './habit/habit.component';
+import { DetailsComponent } from './details/details.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FooterComponent,
-    MenuComponent
+    MenuComponent,
+    LandPageComponent,
+    AboutComponent,
+    ListHabitsComponent,
+    HabitComponent,
+    DetailsComponent
   ],
   imports: [
     BrowserModule,

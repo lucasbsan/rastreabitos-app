@@ -1,0 +1,15 @@
+<ul class="collection with-header">
+  <li class="collection-header"><h4>Hábitos</h4></li>
+  <app-habit [habit]="this.habits[0]"
+              (editPressed)="this.editHabit(this.habits[0])"
+              (detailsPressed)="this.detailsHabit(this.habits[0])"></app-habit>
+  <app-habit [habit]="this.habits[1]"
+              (editPressed)="this.editHabit(this.habits[1])"
+              (detailsPressed)="this.detailsHabit(this.habits[1])"></app-habit>
+  <app-habit [habit]="this.habits[2]"
+              (editPressed)="this.editHabit(this.habits[2])"
+              (detailsPressed)="this.detailsHabit(this.habits[2])"></app-habit>
+  <app-habit [habit]="this.habits[3]"
+              (editPressed)="this.editHabit(this.habits[3])"
+              (detailsPressed)="this.detailsHabit(this.habits[3])"></app-habit>
+</ul>
