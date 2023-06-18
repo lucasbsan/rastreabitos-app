@@ -10,6 +10,8 @@ import { AboutComponent } from './about/about.component';
 import { ListHabitsComponent } from './list-habits/list-habits.component';
 import { HabitComponent } from './habit/habit.component';
 import { DetailsComponent } from './details/details.component';
+import { HabitEditorComponent } from './habit-editor/habit-editor.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -20,11 +22,13 @@ import { DetailsComponent } from './details/details.component';
     AboutComponent,
     ListHabitsComponent,
     HabitComponent,
-    DetailsComponent
+    DetailsComponent,
+    HabitEditorComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Habit } from '../model/habit';
 import { ActivatedRoute, Router } from '@angular/router';
+import { WebStorageUtil } from '../util/web-storage-util';
+import { Constants } from '../util/constants';
 
 @Component({
   selector: 'app-details',
@@ -16,14 +18,9 @@ export class DetailsComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
-    let habits = [
-      new Habit(1, "Comer fruta", "Diário", "Alimentação", false),
-      new Habit(2, "Comer salada", "Diário", "Alimentação", false),
-      new Habit(3, "Ler um livro", "Mensal", "Leitura", false),
-      new Habit(4, "Fazer uma viagem", "Anual", "Viagem", false),
-    ];
+    let habits: Habit[] = WebStorageUtil.get(Constants.HABITS_KEY);
 
-    let idHabit: number = +this.route.snapshot.paramMap.get('id')!;
+    let idHabit: string = this.route.snapshot.paramMap.get('id')!;
 
     habits = habits.filter((h) => {
       return h.id === idHabit;

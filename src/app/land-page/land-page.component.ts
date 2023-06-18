@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Habit } from '../model/habit';
+import { Constants } from '../util/constants';
+import { WebStorageUtil } from '../util/web-storage-util';
 
 @Component({
   selector: 'app-land-page',
@@ -11,12 +13,7 @@ export class LandPageComponent implements OnInit {
   habits!: Array<Habit>
 
   ngOnInit(): void {
-    this.habits = [
-      new Habit(1, "Comer fruta", "Diário", "Alimentação", false),
-      new Habit(2, "Comer salada", "Diário", "Alimentação", false),
-      new Habit(3, "Ler um livro", "Mensal", "Leitura", false),
-      new Habit(4, "Fazer uma viagem", "Anual", "Viagem", false),
-    ];
+    this.habits = WebStorageUtil.get(Constants.HABITS_KEY);
     if(this.habits.length > 0) this.isListEmpty = false;
   }
 }

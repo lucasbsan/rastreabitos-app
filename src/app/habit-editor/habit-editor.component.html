@@ -1,0 +1,103 @@
+<div class="container contact">
+  <h5>Cadastro de Hábitos</h5>
+  <h6>Preencha os dados do hábito que deseja começar</h6>
+  <hr />
+  <div class="row">
+    <div class="col s12">
+      <div
+        id="msg-login"
+        class="card-panel white-text"
+        [class.red]="!this.isSuccess"
+        [class.blue]="this.isSuccess"
+        *ngIf="this.isShowMessage"
+      >
+        {{ this.message }}
+      </div>
+    </div>
+
+    <form class="col s12" #form="ngForm" (submit)="onSubmit()">
+      <div class="input-field col s12">
+        <input
+          id="input-description"
+          name="input-description"
+          type="text"
+          class="validate"
+          [(ngModel)]="this.habit.description"
+          pattern="^([^0-9]*)$"
+          #description="ngModel"
+          required
+        />
+        <label class="active" for="input-description">Descrição *</label>
+        <div class="red-text" [hidden]="description.valid || description.untouched">
+          Por favor, informe a descrição sem números.
+        </div>
+        <div class="red-text" *ngIf="description.errors?.['required'] && description.touched">
+          Por favor, a descrição é obrigatória.
+        </div>
+        <span
+          class="helper-text"
+          data-error="O campo é inválido"
+          data-success="Ok!"
+        ></span>
+      </div>
+
+      <div class="input-field col s12">
+        <input
+          id="input-period"
+          name="input-period"
+          type="text"
+          class="validate"
+          [(ngModel)]="this.habit.period"
+          #period="ngModel"
+          required
+        />
+        <label for="input-period">Periodicidade *</label>
+        <div class="red-text" [hidden]="period.valid || period.untouched">
+          Por favor, preencha a periodicidade sem números.
+        </div>
+      </div>
+
+      <div class="input-field col s12">
+        <input
+          id="input-category"
+          name="input-category"
+          type="text"
+          class="validate"
+          [(ngModel)]="this.habit.category"
+          #category="ngModel"
+          required
+        />
+        <label for="input-category">Categoria *</label>
+        <div class="red-text" [hidden]="category.valid || category.untouched">
+          Por favor, preencha a categoria sem números.
+        </div>
+      </div>
+
+      <div class="input-field col s12">
+        <p>
+          <label for="input-notification">
+            <input
+              id="input-notification"
+              name="input-notification"
+              type="checkbox"
+              [(ngModel)]="this.habit.isNotificationsEnabled"
+            />
+            <span>
+              Habilitar notificações
+            </span>
+          </label>
+        </p>
+      </div>
+
+      <button
+        class="btn waves-effect waves-light teal"
+        type="submit"
+        [disabled]="!form.valid"
+      >
+        Enviar
+        <i class="material-icons right">send</i>
+      </button>
+
+    </form>
+  </div>
+</div>
