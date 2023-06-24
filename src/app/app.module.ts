@@ -12,6 +12,8 @@ import { HabitComponent } from './habit/habit.component';
 import { DetailsComponent } from './details/details.component';
 import { HabitEditorComponent } from './habit-editor/habit-editor.component';
 import { FormsModule } from '@angular/forms';
+import { SuggestionComponent } from './suggestion/suggestion.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -23,12 +25,14 @@ import { FormsModule } from '@angular/forms';
     ListHabitsComponent,
     HabitComponent,
     DetailsComponent,
-    HabitEditorComponent
+    HabitEditorComponent,
+    SuggestionComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
