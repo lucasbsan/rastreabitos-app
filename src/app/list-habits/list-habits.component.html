@@ -1,0 +1,20 @@
+<ul class="collection with-header">
+  <li class="collection-header"><h4>Hábitos</h4></li>
+  <div class="col s12">
+    <div
+      id="msg-login"
+      class="card-panel white-text"
+      [class.red]="!this.isSuccess"
+      [class.blue]="this.isSuccess"
+      *ngIf="this.isShowMessage"
+    >
+      {{ this.message }}
+    </div>
+  </div>
+  <div *ngFor="let h of habits">
+    <app-habit [habit]="h"
+                (editPressed)="this.editHabit(h)"
+                (detailsPressed)="this.detailsHabit(h)"
+                (deletePressed)="this.deleteHabit(h.description)"></app-habit>
+  </div>
+</ul>
