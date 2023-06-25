@@ -14,6 +14,7 @@ import { HabitEditorComponent } from './habit-editor/habit-editor.component';
 import { FormsModule } from '@angular/forms';
 import { SuggestionComponent } from './suggestion/suggestion.component';
 import { HttpClientModule } from '@angular/common/http';
+import { NewsComponent } from './news/news.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { HttpClientModule } from '@angular/common/http';
     HabitComponent,
     DetailsComponent,
     HabitEditorComponent,
-    SuggestionComponent
+    SuggestionComponent,
+    NewsComponent
   ],
   imports: [
     BrowserModule,

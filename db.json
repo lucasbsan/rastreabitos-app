@@ -3,12 +3,22 @@
     {
       "id": "1",
       "name": "John Doe",
-      "message": "Gostaria de um seção de lojinha de livros"
+      "message": "Gostaria de um seção de lojinha de livros",
+      "date": "2023-06-24T12:12:50.798Z"
     },
     {
       "id": "48",
-      "name": "Lucas",
-      "message": "Gostaria de mais telas"
+      "name": "lucas",
+      "message": "Gostaria de mais telas",
+      "date": "2023-06-24T17:12:50.798Z"
+    }
+  ],
+  "news": [
+    {
+      "id": "1",
+      "title": "Incluído nova sessão de novidades do site!",
+      "message": "Nessa sessão iremos falar das recentes atualizações!",
+      "date": "2023-06-25T15:34:53.798Z"
     }
   ]
 }

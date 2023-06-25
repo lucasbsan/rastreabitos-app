@@ -1,0 +1,20 @@
+<div class="container contact">
+  <h5>Novidades!</h5>
+  <div *ngIf="!news || news!.length == 0">
+    <div class="row">
+      <div class="center-align">
+        <span class="col s12 flow-text"
+          >Ainda não temos novidades!</span
+        >
+      </div>
+    </div>
+  </div>
+  <ul *ngFor="let n of news">
+    <li class="collection-item">
+      <div>
+        <h6><b>{{n.title}}</b> - {{n.date | date: 'dd/MM/yyyy HH:mm:ss'}}</h6>
+        {{n.message}}
+      </div>
+    </li>
+  </ul>
+</div>

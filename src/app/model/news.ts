@@ -1,11 +1,11 @@
-export class Suggestion {
+export class News {
   id!: string;
-  name: string;
+  title: string;
   message: string;
   date: Date;
-  constructor(name: string, message: string) {
+  constructor(title: string, message: string) {
     this.id = String(Math.round(Math.random() * 1000));
-    this.name = name;
+    this.title = title;
     this.message = message;
     this.date = new Date();
   }

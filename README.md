@@ -28,9 +28,9 @@ https://www.figma.com/file/HbBDBmzaGuiEEwykt6Ix4V/rastreabitos-app?type=design&n
 - [X] Desabilitar o botão de submit enquanto o formulário está inválido.
 - [X] Fazer requisições a API com tratamento da resposta com Promises ou Observables.
 - [X] Cadastrar uma entidade no JSON Server.
-- [ ] Apresentar uma lista de dados com a diretiva estrutural ngFor.
-- [ ] Usar a diretiva ngIf
-- [ ] Formatar a apresentação de dados com Pipes.
+- [X] Apresentar uma lista de dados com a diretiva estrutural ngFor.
+- [X] Usar a diretiva ngIf
+- [X] Formatar a apresentação de dados com Pipes.
 - [ ] Build e deploy da aplicação.
 
 ## Manual de execução
