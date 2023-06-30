@@ -8,6 +8,9 @@ O frontend da aplicação foi desenvolvido com Angular e o backend foi simulado 
 
 https://lucasbsan.github.io/rastreabitos-app/
 
+## Link para o vídeo de apresentação do projeto final
+https://youtu.be/RW3Oh2Wgd8w
+
 ## Protótipo
 
 https://www.figma.com/file/HbBDBmzaGuiEEwykt6Ix4V/rastreabitos-app?type=design&node-id=1-2
